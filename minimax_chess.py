@@ -130,8 +130,6 @@ if __name__ == '__main__':
         print("Your piece color is BLACK.")
         maximizing_color = chess.WHITE
         print("I move first.")
-    ######### CHOICE OF ALGORITHM ##########################
-    choice_of_max = random.choice(['minimax', 'negamax'])
     ############### WINNING RESULT #########################
     winning_result = "1-0" if maximizing_color else "0-1"
     ############### PLAY ###################################
