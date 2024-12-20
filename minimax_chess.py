@@ -17,13 +17,10 @@ def clear_line():
 
 def clear_board():
     # Move the cursor up 8 lines (the height of the chess board)
-    # sys.stdout.write('\033[AA')
     # Clear each line
     for _ in range(10):
         sys.stdout.write('\033[1A')  # Clear the entire line
         sys.stdout.write('\033[K')  # Move the cursor to the beginning of the line
-    # Move the cursor back up to the top of the board
-    # sys.stdout.write('\033[AA')
 
 # Print the chess board with Unicode characters
 def print_chess_board(board):
@@ -120,7 +117,7 @@ if __name__ == '__main__':
     toss = np.random.choice(['Heads', 'Tails'])
     print("Toss outcome: ", toss)
     ################## PIECE COLOR ASSIGNMENT ###############
-    user_moves_first = False
+    user_moves_first = True #False
     if toss == toss_choice:
         print("Your piece color is WHITE.")
         maximizing_color = chess.BLACK
@@ -139,7 +136,7 @@ if __name__ == '__main__':
     depth = 5  # Depth of search
     # print board
     print_chess_board(board)
-    while not board.is_stalemate() and not board.outcome().winner==winning_result:
+    while not board.is_game_over(): #stalemate() and not board.outcome().winner==winning_result:
         # First move
         move_legal = False
         while not move_legal:
@@ -151,15 +148,19 @@ if __name__ == '__main__':
                     raise ValueError
             except ValueError:
                 print("Move not legal. Try again.")
+                time.sleep(2.0)
+                clear_line()
             except KeyboardInterrupt:
                 print("\nResigned!")
                 exit()
         # Print move
+        if user_moves_first:
+            clear_line()
         print("Move: ", move)
         # Apply move on board
         board.push(move)
         # Print board
-        time.sleep(2.0)
+        time.sleep(1.0)
         clear_line()
         clear_board()
         print_chess_board(board)
@@ -173,15 +174,19 @@ if __name__ == '__main__':
                     raise ValueError
             except ValueError:
                 print("Move not legal. Try again.")
+                time.sleep(2.0)
+                clear_line()
             except KeyboardInterrupt:
                 print("\nResigned!")
                 exit()
         # print move
+        if not user_moves_first:
+            clear_line()
         print("Move: ", move)
         # Apply move
         board.push(move)
         # Print board
-        time.sleep(2.0)
+        time.sleep(1.0)
         clear_line()
         clear_board()
         print_chess_board(board)
