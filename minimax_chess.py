@@ -141,7 +141,7 @@ if __name__ == '__main__':
     depth = 5  # Depth of search
     # print board
     print_chess_board(board)
-    while not board.is_stalemate() or not board.outcome().winner==winning_result:
+    while not board.is_stalemate() and not board.outcome().winner==winning_result:
         # First move
         move_legal = False
         while not move_legal:
