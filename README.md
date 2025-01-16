@@ -14,8 +14,12 @@ Click on the items to go to my Medium blog page ([The Owl](https://medium.com/th
 8. [Memory Augmentation](https://medium.com/the-owl/) :white_square_button:
 9. [Hashing](https://medium.com/the-owl/) :white_square_button:
 
+Final-1. [Combining with LiChess-bot to play on LiChess](https://medium.com/the-owl/) :white_square_button:
+
 Final. [Submitting to Chess Engine Competition](https://medium.com/the-owl/) :white_square_button:
 
+### Side Projects
+1. [Setting up Chess app using StreamLit/Gradio on HuggingFace Spaces](https://medium.com/the-owl/) 🤗
 
 ## Results
 
