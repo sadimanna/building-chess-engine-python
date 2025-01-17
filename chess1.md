@@ -76,7 +76,14 @@ Select an ‘**Analysis Board**’, and enable the engine. On inspecting the ‘
 
 ![](https://cdn-images-1.medium.com/max/2788/1*ogPtBh0NXguz5k7yM8cV5w.png)
 
-[![Demo of communication between Dummy CE and En-Croissant GUI]('/assets/dummycesnip.png')](https://youtu.be/fjjPVmIVep0)
+ <!-- [![Demo of communication between Dummy CE and En-Croissant GUI](http://img.youtube.com/vi/fjjPVmIVep0/maxresdefault.jpg)](https://www.youtube.com/watch?v=fjjPVmIVep0) -->
+
+> Demo of communication between Dummy CE and En-Croissant GUI
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=fjjPVmIVep0" target="_blank">
+ <img src="./assets/dummycesnip.PNG" alt="Watch the video" width="820" height="448" border="10" />
+</a>
+
 We can see that our dummy chess engine can successfully communicate with the **En-Croissant** GUI. This article gives us the necessary understanding of the communication process between the GUI parent process and the chess engine in the child process.
 
 In the next article, we will take the first step towards building the real chess engine. We will start with the search algorithms, followed by evaluation methods. Then we will further try to improve the implementation using different methods.
