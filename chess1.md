@@ -77,13 +77,12 @@ Select an ‘**Analysis Board**’, and enable the engine. On inspecting the ‘
 ![](https://cdn-images-1.medium.com/max/2788/1*ogPtBh0NXguz5k7yM8cV5w.png)
 
 <div style="position: relative; width: 100%; padding-bottom: 56.25%">
-<iframe src="https://youtu.be/fjjPVmIVep0" 
+<iframe src="https://www.youtube.com/embed/fjjPVmIVep0" 
         title="Demo of communication between dummy chess engine and En-Croissant" frameborder="0" allowfullscreen
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         style="position: absolute; width: 100%; height: 100%;">
 </iframe>
 </div>
-
 
 We can see that our dummy chess engine can successfully communicate with the **En-Croissant** GUI. This article gives us the necessary understanding of the communication process between the GUI parent process and the chess engine in the child process.
 
